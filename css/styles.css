@@ -71,6 +71,11 @@ body {
   padding-bottom: 94px;
 }
 
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
 /*---------END COMPONENTS---------*/
 
 /*---------HEADER---------*/
@@ -169,15 +174,12 @@ body {
   margin-bottom: 30px;
 }
 .modal-btn {
-  border: none;
-  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--contrast-color);
-  cursor: pointer;
   padding: 10px 32px;
 }
 
@@ -345,6 +347,16 @@ body {
 
 /*---------PORTFOLIO PAGE---------*/
 
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters .filter-item + .filter-item {
+  margin-left: 8px;
+}
+
 .filter-btn {
   font-weight: 500;
   font-size: 16px;
@@ -352,27 +364,45 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
-  border-radius: 4px;
+  padding: 6px 22px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--contrast-color);
   background-color: var(--accent-color);
 }
-.portfolio-item-title {
+
+.portfolio-page-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-page-item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.portfolio-page-card-dscr {
+  background: var(--contrast-color);
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.portfolio-page-item-title {
+  color: var(--main-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
-.portfolio-item-descroption {
+.portfolio-page-item-description {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-}
-.filter-btn {
-  cursor: pointer;
 }
 
 /*---------END PORTFOLIO PAGE---------*/
